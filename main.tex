@@ -1,0 +1,105 @@
+\documentclass{minimalist}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=0.8in]{geometry}
+
+\begin{document}
+
+\thispagestyle{empty}
+\name{曹~宇}{tsaoyu@gmail.com}
+
+\horizontalline
+
+%=============== 无填充段悬挂综述 =============
+\bareheader{研究方向}
+\hangindent=2em
+可再生能源与机器人交叉学科，主要关注机器人长期自主运行过程中的可再生能源供应，以及自适应行为控制策略。可再生能源为机器人提供不间断续航能力，自适应控制增强其复杂环境下适应能力。
+
+%=============== 点填充段三栏 ================
+\fillheader{教育背景}
+\begin{tabular}{c|ll}
+2016-01 至   2019-03  & \multicolumn{2}{l}{{\heiti 英国南安普顿大学} ~{\it 博士}、Lloyds 学者 } \\
+     & 课题：新能源机器人~&导师团队 Nicholas Townsend, Mingyi Tan \\
+2014-09 至   2015-11      &  \multicolumn{2}{l}{{\heiti 英国南安普顿大学} 轮机工程~{\it 科学硕士（一等荣誉学位）}} \\
+  & 论文：仿生水下无人深潜器概念设计& 论文导师 Gabriel Weymouth \\
+  2010-09 至   2014-06      &  \multicolumn{2}{l}{{\heiti 武汉理工大学} 船舶与海洋工程~{\it 工学学士}}\\
+  & 论文：船舶动力定位系统的设计与仿真 ~& 论文导师：徐海翔 \\
+  2011-09 至   2014-06      &  \multicolumn{2}{l}{{\heiti 武汉大学} 英语语言文学~{\it 文学学士} }\\
+\end{tabular}
+
+%=============== 点填充段自适应双栏 ================
+\fillheader{科研经历}
+\begin{tabularx}{\textwidth}{cX}
+2016 至   2019   &{\heiti 博士课题：} { 混合新能源机器人的长时间全自持能源系统设计与自适应管理}\\
+      & \begin{itemize}[noitemsep,topsep=-15pt]
+          \item 提出适用于移动装置的太阳能与风能混合能源俘获系统模型，建立了基于历史气象数据驱动的动态模拟仿真平台，首次实现移动平台上的新能源装置的建模与仿真
+          \item 结合风光互补特性提出基于遗传算法的新能源机器人能量系统优化设计方法，所设计的系统能够为机器人提供长达数月，横跨数千公里的不间断能源供应
+          \item 针对能源供应中的不确定性，提出了强化学习自适应能源管理策略，深度神经网络根据历史气象数据进行无监督学习，提高了未知环境中能源供应可靠性
+      \end{itemize} \\
+2016 至   2019   &{\heiti 交叉课题：} {全自主无人风帆船舶自主导航路径规划和控制系统设计}\\
+      & \begin{itemize}[noitemsep, topsep=-15pt]
+          \item 设计无人帆船的欠驱动航迹规划方法，并使用ROS平台编写相关主控程序，实现帆船在各种风向状态下的自动导航功能：定点巡航，虚拟锚定，三角形航行，区域搜索
+          \item 使用计算机视觉方法通过背景分离实现目标色彩与形状实时监测，
+          识别航道障碍物并完成帆船航行中的动态避障，解决了欠驱系统时滞情况下的避障问题
+          \item 提出基于机器学习的无人帆船行为控制方法，通过尝试不同的转向策略学习出在复杂海况下的操纵方法，实现了在不规则波浪干扰下的自适应控制
+          \item 参与国际赛事的组织以及规则修订工作，倡议了跨太平洋无人帆船挑战
+      \end{itemize} \\
+\end{tabularx}
+
+%=============== 带编号列举 ================
+
+\fillheader{科研成果}
+\begin{enumerate}[itemsep=2pt]
+    \item \underline{Y.Cao}, N.C.Townsend, and M.Tan (under review) {\it Deep reinforcement learning based adaptive power management strategy for self-sustained mobile robots}, Journal of Application of Artificial Intelligence
+
+    \item \underline{Y.Cao}, N.C.Townsend, and M.Tan (under review) {\it Optimal design of wind-PV hybrid renewable energy system for moving platforms}, Journal of Renewable Energy.
+
+    \item S. Lemaire, \underline{Y.Cao}, T.Kluyer, et.al (2018) {\it Adaptive probabilistic tack manoeuvre for sailing vessels}, International Robotics Sailing Conference, United Kingdom
+
+    \item \underline{Y.Cao}, N.C.Townsend, and M.Tan (2017) {\it  Hybrid renewable energy system for ocean going platforms}, OCEANS’17 MTS/IEEE, Aberdeen, United Kingdom. 
+    
+     \item \underline{Y.Cao}, (software) Dynamic Data Driven Hybrid Renewable Energy ($D^3HRE$) design and simulation framework, {\tt doi/10.5281/zenodo.1219669}
+     
+     \item \underline{Y.Cao}, (software) PyResis, A Python based  empirical ship  resistance and propulsion power estimation program,  {\tt doi/10.5281/zenodo.1219655}
+     
+     编写的 D$^3$HRE, PyResis, RLenergy, PyVisilibity 等专业学术软件总下载量超过一万次
+     
+\end{enumerate}
+
+
+\fillheader{荣誉奖励}
+\begin{tabular}{cllll}
+2018-09 & {\heiti 世界无人帆船锦标赛} &  {\it 世界冠军·迷你级} & 赛事组委，主程序 & 英国 \\
+2017-09 & {\heiti 世界无人帆船锦标赛} &   {\it 世界冠军·迷你级} & 领队 & 挪威 \\
+2016-09 & {\heiti 世界无人帆船锦标赛} &   {\it 世界冠军·迷你级} & 控制组 & 葡萄牙 \\
+2016-06 & \textsf{HydroContest} &   {\it 竞速组第四名} & 机电组 &瑞士 \\
+2015-10 & {\heiti 劳埃德船级社} &   {\it 博士奖学金} & & 英国 \\
+2013-09 & {\heiti 武汉理工大学} &   {\it 二等奖学金} & & 中国 \\
+2012-06 & {\heiti 武汉理工大学} &   {\it 三好学生} & & 中国 \\
+\end{tabular}
+
+
+\fillheader{教学经验}
+\begin{tabular}{lll}
+  {\heiti 海洋机器人} & 研究生课程 &  助教\\
+ {\heiti Python 科学与工程实践编程} & 本科生课程 &  助教\\
+ {\heiti Solidworks 三维工程建模与课程设计} & 本科生课程 &  助教\\
+\end{tabular}
+
+\fillheader{特邀讲座}
+\begin{tabular}{clll}
+2018 & {\heiti 无人帆船锦标赛冬令营} & 主讲 & 浙江大学 \\
+2017 & {\heiti 混合新能源机器人的未来} & 嘉宾 & 英国普利茅斯大学 \\
+\end{tabular}
+
+%=============== 无编号列举 ================
+
+\fillheader{专业技能}
+\begin{itemize}[noitemsep]
+    \item 编程语言：Python, C++, Mathematica, MATLAB
+    \item 开发框架：Linux, ROS, Gazebo, TensorFlow, PyTorch, pandas
+    \item 计算平台：Iridis5 超级计算机，Raspberry Pi 嵌入式系统，GPU 计算
+\end{itemize}
+
+\end{document}
+
+
